@@ -1,0 +1,103 @@
+<html>
+<header>
+    <title> Dynamic Website </title>
+    <h1>Online Bookstore</h1>
+</header>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+<h2>Todo List</h2>
+
+<div class="vertical-menu">
+    <button id = "DisplayMainList" type="button" onclick ="displayMainList()">Display Main List</button>
+
+    <button type="button" onclick ="displayBestseller()">BestSeller</button>
+    <button onclick="displayFiction()"> Fiction </button>
+</div>
+
+<div class="Information">
+    <div class="Bestseller">
+        <h3> BestSellers</h3>
+        <ul>
+            <li> Bible </li>
+            <li> Jeffrey Archer </li>
+        </ul>
+    </div>
+
+
+    <div class="Fiction">
+        <h3> Fiction</h3>
+        <ul>
+            <li> Lord of the Rings </li>
+            <li> Harry Potter </li>
+        </ul>
+    </div>
+
+
+
+
+</div>
+
+<div class="Main-List">
+    <h2>Main List</h2>
+    <!--Make sure the form has the autocomplete function switched off:-->
+
+
+
+
+    <div id = "form">
+        <div class="autocomplete" style="width:300px;">
+            <input id="searchBarInput" type="text" name="myCountry" placeholder="Country">
+        </div>
+        <button onclick="addToList()"> Submit</button>
+    </div>
+
+    <table id = "listTable">
+        <tr>
+            <th>Serial No.</th>
+            <th>Country</th>
+            <th> Change </th>>
+
+        </tr>
+        <tr id = "r1">
+            <th>1</th>
+            <td>Afghanistan</td>
+            <td>    <button id ="1" onclick="deleteThisRow(this)" >Delete</button> <<button id ="1" onclick="editThisRow(this)" >Edit</button> </td>
+        </tr>
+        <tr id = "r2">
+            <th>2</th>
+            <td>Bangladesh</td>
+            <td>    <button id ="2" onclick="deleteThisRow(this)" >Delete</button> <button id ="2" onclick="editThisRow(this)" >Edit</button> </td>
+        </tr>
+        <tr id = "r3">
+            <th>3</th>
+            <td>Canada</td>
+            <td>    <button id ="3" onclick="deleteThisRow(this)" >Delete</button> <<button id ="3" onclick="editThisRow(this)" >Edit</button> </td>
+        </tr>
+        <tr  id = "r4">
+            <th>4</th>
+            <td>Denmark</td>
+            <td>    <button id ="4" onclick="deleteThisRow(this)" >Delete</button> <<button id ="4" onclick="editThisRow(this)" >Edit</button> </td>
+        </tr>
+        <tr id = "r5">
+            <th>5</th>
+            <td>Ecaduor</td>
+            <td>    <button id ="5" onclick="deleteThisRow(this)" >Delete</button> <<button id ="5" onclick="editThisRow(this)" >Edit</button> </td>
+        </tr>
+    </table>
+</div>
+
+<script src="logic.js">
+</script>
+</body>
+
+<footer>Ashank Dsouza</footer>
+
+
+
+</html>
